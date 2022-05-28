@@ -224,6 +224,8 @@ GEM
     ruby_parser (3.19.1)
       sexp_processor (~> 4.16)
     sexp_processor (4.16.1)
+    shoulda-matchers (5.1.0)
+      activesupport (>= 5.2.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -271,6 +273,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
+  shoulda-matchers
   simple_form
   sprockets-rails
   tzinfo-data
