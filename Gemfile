@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
+gem "bootsnap", require: false
 gem "haml"
 gem "haml-rails"
-gem "rails"
-gem "sprockets-rails"
+gem "jsbundling-rails"
 gem "pg"
 gem "puma"
-gem "jsbundling-rails"
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
-gem "bootsnap", require: false
+gem "rails"
+gem "sprockets-rails"
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem "dotenv-rails"
@@ -21,12 +23,10 @@ group :development, :test do
 end
 
 group :development do
-  gem "web-console"
   gem "better_errors"
   gem "binding_of_caller"
+  gem "web-console"
 end
 
 group :test do
-
 end
-
