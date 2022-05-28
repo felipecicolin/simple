@@ -80,4 +80,6 @@ RSpec.configure do |config|
     add_group "Serializers", "app/serializers"
     add_group "Specs", "spec"
   end
+
+  config.include Request::JsonHelpers, type: :request
 end
