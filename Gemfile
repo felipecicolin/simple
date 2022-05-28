@@ -11,9 +11,9 @@ gem "jsbundling-rails"
 gem "pg"
 gem "puma"
 gem "rails"
+gem "simple_form"
 gem "sprockets-rails"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
-gem 'simple_form'
 
 group :development, :test do
   gem "dotenv-rails"
