@@ -43,7 +43,7 @@ jobs:
 
       - name: Bundle Javascript
         run: |
-          rails javascript:build
+          bin/rails javascript:build
 
       - name: Run Tests
         env:
