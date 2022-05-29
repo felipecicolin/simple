@@ -26,6 +26,7 @@ group :development, :test do
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
+  gem "shoulda-matchers"
 end
 
 group :development do
@@ -36,6 +37,5 @@ end
 
 group :test do
   gem "database_cleaner-active_record"
-  gem "shoulda-matchers"
   gem "simplecov", require: false
 end

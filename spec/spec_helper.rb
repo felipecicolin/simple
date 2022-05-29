@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require File.expand_path("../config/environment", __dir__)
+require "rails_helper"
 require "codecov"
 require "simplecov"
+require File.expand_path("../config/environment", __dir__)
 
 RSpec.configure do |config|
   SimpleCov.start
