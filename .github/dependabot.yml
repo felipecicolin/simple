@@ -4,8 +4,31 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+
 updates:
-  - package-ecosystem: "bundler" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: bundler
+    directory: "/"
     schedule:
-      interval: "daily"
+      interval: daily
+      time: "06:00"
+      timezone: America/Sao_Paulo
+    labels:
+    - automerge
+
+  - package-ecosystem: yarn
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "06:00"
+      timezone: America/Sao_Paulo
+    labels:
+    - automerge
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "06:00"
+      timezone: America/Sao_Paulo
+    labels:
+    - automerge
