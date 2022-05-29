@@ -45,9 +45,6 @@ jobs:
           sudo apt-get update && sudo apt-get -yqq install libpq-dev build-essential libcurl4-openssl-dev
           bundle install --jobs 4 --retry 3
 
-      - name: Build Esbuild
-        run: yarn build
-
       - name: Run Tests
         env:
           RAILS_ENV: test
