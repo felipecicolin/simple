@@ -35,8 +35,10 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-        run:
-          - yarn install
+
+      - run: yarn install
+
+      - run: bin/rails assets:precompile
 
       - name: Install dependencies
         run: |
