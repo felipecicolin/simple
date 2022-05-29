@@ -38,7 +38,7 @@ jobs:
 
       - run: yarn install
 
-      - run: bin/rails assets:precompile
+      - run: bundle exec rake assets:precompile
 
       - name: Install dependencies
         run: |
