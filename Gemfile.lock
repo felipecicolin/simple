@@ -79,6 +79,8 @@ GEM
       msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
+    codecov (0.6.0)
+      simplecov (>= 0.15, < 0.22)
     coderay (1.1.3)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
@@ -292,6 +294,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootsnap
+  codecov
   database_cleaner-active_record
   devise
   dotenv-rails
