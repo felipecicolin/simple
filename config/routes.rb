@@ -2,6 +2,7 @@
 
 Rails.application.routes.draw do
   devise_for :admins
-  root "home#index"
-  get "home/index"
+
+  root "pages#home"
+  get "pages/home"
 end

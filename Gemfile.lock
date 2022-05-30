@@ -66,8 +66,6 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
     bcrypt (3.1.18)
     better_errors (2.9.1)
@@ -133,10 +131,6 @@ GEM
       concurrent-ruby (~> 1.0)
     jsbundling-rails (1.0.2)
       railties (>= 6.0.0)
-    launchy (2.5.0)
-      addressable (~> 2.7)
-    letter_opener (1.8.1)
-      launchy (>= 2.2, < 3)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -175,7 +169,6 @@ GEM
     pry-byebug (3.9.0)
       byebug (~> 11.0)
       pry (~> 0.13.0)
-    public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -310,7 +303,6 @@ DEPENDENCIES
   haml
   haml-rails
   jsbundling-rails
-  letter_opener
   pg
   pry-byebug
   puma
