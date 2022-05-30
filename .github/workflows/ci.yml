@@ -30,10 +30,21 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      - run: yarn install
+
+      - run: bundle exec rake assets:precompile
+
       - name: Install dependencies
         run: |
           sudo apt-get update && sudo apt-get -yqq install libpq-dev build-essential libcurl4-openssl-dev
           bundle install --jobs 4 --retry 3
+
       - name: Run Tests
         env:
           RAILS_ENV: test

@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require "simplecov"
-SimpleCov.start
-
+require "rails_helper"
 require "codecov"
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
-
+require "simplecov"
 require File.expand_path("../config/environment", __dir__)
 
 RSpec.configure do |config|
+  SimpleCov.start
+
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
